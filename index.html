@@ -1,0 +1,646 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enchanted Birthday for CHUBBY CHAOS "CHETHANA"</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Dancing+Script:wght@700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
+        
+        :root {
+            --pink: #ffb6c1;
+            --dark-pink: #ff69b4;
+            --gold: #ffd700;
+            --purple: #e0b0ff;
+            --dark-purple: #9370db;
+            --blue: #89cff0;
+            --green: #98fb98;
+            --red: #ff6b6b;
+            --white: #fff9f9;
+        }
+        
+        body {
+            font-family: 'EB Garamond', serif;
+            text-align: center;
+            background: linear-gradient(135deg, #ffcce6, #f9f2ff);
+            margin: 0;
+            padding: 0;
+            color: #5a2d5a;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+        
+        .storybook {
+            width: 100%;
+            max-width: 100%;
+            position: relative;
+            padding-bottom: 100px;
+        }
+        
+        .page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .content {
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            width: 90%;
+            position: relative;
+            border: 3px solid var(--gold);
+            background-image: url('https://images.unsplash.com/photo-1704119954016-ced34c608374?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBhdHRlcm5zJTIwd2l0aCUyMGhlYXJ0c3xlbnwwfHwwfHx8MA%3D%3D');
+            background-size: cover;
+            background-blend-mode: multipy;
+        }
+        
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            color: #d23c77;
+            font-size: 3.5rem;
+            margin-bottom: 25px;
+            text-shadow: 2px 2px 0 rgba(255,255,255,0.8);
+            letter-spacing: 1px;
+            background: linear-gradient(to right, #ff6b8b, #d23c77);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: rainbow 5s ease infinite;
+        }
+        
+        @keyframes rainbow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        p {
+            font-size: 1.4rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #4a235a;
+            font-weight: 600;
+            text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+        }
+        
+        .emoji-feature {
+            font-size: 4rem;
+            margin: 30px 0;
+            display: inline-block;
+            animation: float 4s ease-in-out infinite, glow 2s ease-in-out infinite alternate;
+            filter: drop-shadow(0 5px 5px rgba(0,0,0,0.3));
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(-5deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+        
+        @keyframes glow {
+            from { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e60073, 0 0 20px #e60073; }
+            to { text-shadow: 0 0 10px #fff, 0 0 20px #ff4da6, 0 0 30px #ff4da6, 0 0 40px #ff4da6; }
+        }
+        
+        .friend-name {
+            color: #d23c77;
+            font-weight: bold;
+            font-size: 2em;
+            display: inline-block;
+            animation: pulse 1.5s infinite;
+            text-shadow: 1px 1px 3px rgba(210, 60, 119, 0.3);
+            font-family: 'Dancing Script', cursive;
+            background: linear-gradient(to right, #ff6b8b, #d23c77);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding: 0 10px;
+        }
+        
+        .letter-highlight {
+            font-size: 3.5rem;
+            color: #d23c77;
+            animation: pulse 1s infinite, spin 4s linear infinite;
+            display: inline-block;
+            margin: 0 10px;
+            font-family: 'Cinzel Decorative', cursive;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            background: linear-gradient(to bottom, #ff8fab, #d23c77);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            box-shadow: 0 0 10px rgba(210, 60, 119, 0.5);
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg) scale(1); }
+            50% { transform: rotate(180deg) scale(1.2); }
+            100% { transform: rotate(360deg) scale(1); }
+        }
+        
+        .signature {
+            font-style: italic;
+            margin-top: 40px;
+            font-size: 2rem;
+            color: #d23c77;
+            font-family: 'Dancing Script', cursive;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+            animation: pulse 2s infinite;
+        }
+        
+        .next-btn {
+            background: linear-gradient(to right, #d23c77, #ff6b8b);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.3rem;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(210, 60, 119, 0.4);
+            font-family: 'Cinzel Decorative', cursive;
+            border: 2px solid white;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            animation: pulse 2s infinite;
+        }
+        
+        .next-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 7px 20px rgba(210, 60, 119, 0.6);
+            background: linear-gradient(to right, #ff6b8b, #d23c77);
+        }
+        
+        .highlight {
+            font-weight: bold;
+            color: #d23c77;
+            text-shadow: 1px 1px 3px rgba(210, 60, 119, 0.3);
+        }
+        
+        /* Background decorations */
+        .edinburgh-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0.3;
+            z-index: -1;
+            transition: opacity 1s ease-in-out;
+        }
+        
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80') repeat;
+            z-index: -1;
+            opacity: 0.3;
+            animation: twinkle 2s infinite alternate;
+        }
+        
+        @keyframes twinkle {
+            0% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        
+        .floating-emoji {
+            position: absolute;
+            font-size: 2.5rem;
+            animation: floatAround 15s linear infinite;
+            z-index: 10;
+            opacity: 0.9;
+            filter: drop-shadow(0 0 8px rgba(255,255,255,0.8));
+            text-shadow: 0 0 10px rgba(255,255,255,0.8);
+        }
+        
+        @keyframes floatAround {
+            0% { transform: translate(0, 0) rotate(0deg) scale(1); }
+            25% { transform: translate(50vw, 20vh) rotate(90deg) scale(1.3); }
+            50% { transform: translate(30vw, 50vh) rotate(180deg) scale(1); }
+            75% { transform: translate(-20vw, 30vh) rotate(270deg) scale(1.4); }
+            100% { transform: translate(0, 0) rotate(360deg) scale(1); }
+        }
+        
+        .music-control {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: rgba(255,255,255,0.9);
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 100;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            font-size: 2rem;
+            transition: all 0.3s;
+            border: 3px solid var(--gold);
+            animation: pulse 2s infinite;
+        }
+        
+        .music-control:hover {
+            transform: scale(1.1);
+            background: rgba(255,255,255,1);
+            box-shadow: 0 7px 25px rgba(0,0,0,0.4);
+        }
+        
+        /* Scrollable sections */
+        .scroll-section {
+            scroll-snap-align: start;
+            min-height: 100vh;
+        }
+        
+        /* Sparkles */
+        .sparkle {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background-color: #fff;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 100;
+            animation: sparkle 1s ease-out forwards;
+            box-shadow: 0 0 10px 2px rgba(255,255,255,0.8);
+        }
+        
+        @keyframes sparkle {
+            0% { transform: scale(0); opacity: 0; }
+            50% { transform: scale(1.5); opacity: 1; }
+            100% { transform: scale(0); opacity: 0; }
+        }
+        
+        /* Colorful backgrounds for each section */
+        #cover .content {
+            background-color: rgba(255, 214, 235, 0.9);
+        }
+        #letter-c .content {
+            background-color: rgba(255, 230, 250, 0.9);
+        }
+        #letter-h .content {
+            background-color: rgba(230, 230, 255, 0.9);
+        }
+        #letter-e .content {
+            background-color: rgba(255, 240, 245, 0.9);
+        }
+        #letter-t .content {
+            background-color: rgba(255, 240, 230, 0.9);
+        }
+        #letter-h2 .content {
+            background-color: rgba(240, 255, 240, 0.9);
+        }
+        #letter-a .content {
+            background-color: rgba(255, 230, 230, 0.9);
+        }
+        #letter-n .content {
+            background-color: rgba(240, 230, 255, 0.9);
+        }
+        #letter-a2 .content {
+            background-color: rgba(255, 235, 240, 0.9);
+        }
+        #finale .content {
+            background-color: rgba(255, 220, 235, 0.9);
+        }
+    </style>
+</head>
+<body>
+    <!-- Multiple music sources for better compatibility -->
+    <audio id="birthdayMusic" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        <source src="https://assets.mixkit.co/music/preview/mixkit-romantic-suggestion-1212.mp3" type="audio/mpeg">
+        <source src="https://assets.mixkit.co/music/preview/mixkit-piano-melody-1170.mp3" type="audio/mpeg">
+    </audio>
+    <div class="music-control" id="musicToggle">🎵</div>
+    
+    <!-- Background images -->
+    <div class="edinburgh-bg" style="background-image: url('https://plus.unsplash.com/premium_photo-1699566448247-1627bee256d0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZWRpbmJ1cmdofGVufDB8fDB8fHww');"></div>
+    <div class="edinburgh-bg" style="background-image: url('https://images.unsplash.com/photo-1573558098539-394235f962b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZWRpbmJ1cmdofGVufDB8fDB8fHww');"></div>
+    <div class="edinburgh-bg" style="background-image: url('https://images.unsplash.com/photo-1535905471006-9b3b2c82ea94?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGVkaW5idXJnaHxlbnwwfHwwfHx8MA%3D%3D');"></div>
+    <div class="edinburgh-bg" style="background-image: url('https://images.unsplash.com/photo-1597503808371-090058f708ed?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fGVkaW5idXJnaHxlbnwwfHwwfHx8MA%3D%3D');"></div>
+    <div class="edinburgh-bg" style="background-image: url('https://images.unsplash.com/photo-1575583966369-2f8ee5f77bd7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fGVkaW5idXJnaHxlbnwwfHwwfHx8MA%3D%3D');"></div>
+    
+    <div class="stars"></div>
+    
+    <!-- Floating fantasy emojis -->
+    <div class="floating-emoji" style="top:10%; left:10%; animation-delay:0s;">🏰</div>
+    <div class="floating-emoji" style="top:30%; left:80%; animation-delay:2s;">🦄</div>
+    <div class="floating-emoji" style="top:70%; left:20%; animation-delay:4s;">✨</div>
+    <div class="floating-emoji" style="top:50%; left:60%; animation-delay:6s;">🐉</div>
+    <div class="floating-emoji" style="top:20%; left:40%; animation-delay:8s;">🌹</div>
+    <div class="floating-emoji" style="top:80%; left:70%; animation-delay:10s;">🔮</div>
+    <div class="floating-emoji" style="top:15%; left:75%; animation-delay:3s;">💖</div>
+    <div class="floating-emoji" style="top:65%; left:15%; animation-delay:5s;">🌟</div>
+    <div class="floating-emoji" style="top:85%; left:85%; animation-delay:7s;">🎂</div>
+    <div class="floating-emoji" style="top:25%; left:25%; animation-delay:1s;">🌸</div>
+    <div class="floating-emoji" style="top:75%; left:75%; animation-delay:9s;">💕</div>
+    
+    <div class="storybook">
+        <!-- Cover Page -->
+        <div class="page scroll-section" id="cover">
+            <div class="content">
+                <h1 style="font-size:4rem;">Enchanted Birthday</h1>
+                <div class="emoji-feature">🎂🏰✨</div>
+                <p style="font-size:2rem; color:#5a2d5a;">For <span class="friend-name">CHETHANA A</span></p>
+                <p style="color:#5a2d5a; font-size:1.5rem;">Scroll down to begin your magical journey...</p>
+                <div class="emoji-feature" style="font-size:2.5rem;">👇🦄🔮</div>
+            </div>
+        </div>
+        
+        <!-- Letter C -->
+        <div class="page scroll-section" id="letter-c">
+            <div class="content">
+                <h1><span class="letter-highlight">C</span> is for...</h1>
+                <div class="emoji-feature">🌈✨🏰</div>
+                <p>Dear <span class="friend-name">CHETHANA💝</span>,</p>
+                <p><span class="letter-highlight">C</span>andid – Your honesty feels like a warm breeze on a summer day—so refreshing and true.</p>
+                <p><span class="letter-highlight">C</span>aptivating – The way you light up a room makes everyone stop and smile—you're simply magical.</p>
+                <p><span class="letter-highlight">C</span>aring – You always remember the little things that make people feel loved.</p>
+                <p><span class="letter-highlight">C</span>hubby – Your cute little cheeks are squish-worthy clouds of joy.</p>
+                <p><span class="letter-highlight">C</span>ute – You're the walking definition of adorable—like a hug wrapped in sunshine!</p>
+                <button class="next-btn" onclick="scrollToSection('letter-h')">Next Letter 🏰</button>
+            </div>
+        </div>
+        
+        <!-- Letter H -->
+        <div class="page scroll-section" id="letter-h">
+            <div class="content">
+                <h1><span class="letter-highlight">H</span> is for...</h1>
+                <div class="emoji-feature">🌟💫🏰</div>
+                <p>Dear <span class="friend-name">CHETHANA💝</span>,</p>
+                <p><span class="letter-highlight">H</span>onest – You tell the truth so sweetly, it feels like honey on a heart.</p>
+                <p><span class="letter-highlight">H</span>umble – You shine so bright without ever asking for a spotlight.</p>
+                <p><span class="letter-highlight">H</span>opeful – Your eyes carry dreams that lift the skies higher.</p>
+                <p><span class="letter-highlight">H</span>armonious – You bring peace just by being you—like a melody the heart loves.</p>
+                <p><span class="letter-highlight">H</span>igh-spirited – Your joy dances like bubbles in the breeze!</p>
+                <button class="next-btn" onclick="scrollToSection('letter-e')">Next Letter 🏰</button>
+            </div>
+        </div>
+        
+        <!-- Letter E -->
+        <div class="page scroll-section" id="letter-e">
+            <div class="content">
+                <h1><span class="letter-highlight">E</span> is for...</h1>
+                <div class="emoji-feature">💖🌹🏰</div>
+                <p>Dear <span class="friend-name">CHETHANA💝</span>,</p>
+                <p><span class="letter-highlight">E</span>mpathetic – You feel what others feel and make their world gentler.</p>
+                <p><span class="letter-highlight">E</span>ncouraging – Your words are like cozy blankets on a cold day—they comfort and uplift.</p>
+                <p><span class="letter-highlight">E</span>legant – You move through the world with quiet grace, like poetry in motion.</p>
+                <p><span class="letter-highlight">E</span>xcellent – You don't just do well—you sprinkle a little magic on everything you touch.</p>
+                <p><span class="letter-highlight">E</span>xceptional – You're a rare gem in a world full of pebbles!</p>
+                <button class="next-btn" onclick="scrollToSection('letter-t')">Next Letter 🏰</button>
+            </div>
+        </div>
+        
+        <!-- Letter T -->
+        <div class="page scroll-section" id="letter-t">
+            <div class="content">
+                <h1><span class="letter-highlight">T</span> is for...</h1>
+                <div class="emoji-feature">💛🌟🏰</div>
+                <p>Dear <span class="friend-name">CHETHANA💝</span>,</p>
+                <p><span class="letter-highlight">T</span>rustworthy – You're the secret-keeper, the promise-holder, the safe place.</p>
+                <p><span class="letter-highlight">T</span>ender-hearted – Your heart is like a soft pillow everyone wants to rest on.</p>
+                <p><span class="letter-highlight">T</span>actful – You speak with kindness, even when the words are hard.</p>
+                <p><span class="letter-highlight">T</span>alented – You create magic with your hands, mind, and smile!</p>
+                <button class="next-btn" onclick="scrollToSection('letter-h2')">Next Letter 🏰</button>
+            </div>
+        </div>
+        
+        <!-- Letter H -->
+        <div class="page scroll-section" id="letter-h2">
+            <div class="content">
+                <h1><span class="letter-highlight">H</span> is for...</h1>
+                <div class="emoji-feature">💗🏡🏰</div>
+                <p>Dear <span class="friend-name">CHETHANA💝</span>,</p>
+                <p><span class="letter-highlight">H</span>eartwarming – Everything you do melts hearts like marshmallows in cocoa.</p>
+                <p><span class="letter-highlight">H</span>uggable – You give the kind of hugs that make everything feel okay again.</p>
+                <p><span class="letter-highlight">H</span>omey – Being around you feels like coming home—warm, safe, and full of love.</p>
+                <button class="next-btn" onclick="scrollToSection('letter-a')">Next Letter 🏰</button>
+            </div>
+        </div>
+        
+        <!-- Letter A -->
+        <div class="page scroll-section" id="letter-a">
+            <div class="content">
+                <h1><span class="letter-highlight">A</span> is for...</h1>
+                <div class="emoji-feature">🌸🎀🏰</div>
+                <p>Dear <span class="friend-name">CHETHANA💝</span>,</p>
+                <p><span class="letter-highlight">A</span>ffectionate – You spread love like petals in the wind—soft and sweet.</p>
+                <p><span class="letter-highlight">A</span>mazing – Just by being you, you make ordinary days feel extraordinary.</p>
+                <p><span class="letter-highlight">A</span>dmirable – The way you care, share, and dare is simply beautiful.</p>
+                <p><span class="letter-highlight">A</span>dventurous – You make life feel like a storybook waiting to be read.</p>
+                <button class="next-btn" onclick="scrollToSection('letter-n')">Next Letter 🏰</button>
+            </div>
+        </div>
+        
+        <!-- Letter N -->
+        <div class="page scroll-section" id="letter-n">
+            <div class="content">
+                <h1><span class="letter-highlight">N</span> is for...</h1>
+                <div class="emoji-feature">💕🌿🏰</div>
+                <p>Dear <span class="friend-name">CHETHANA💝</span>,</p>
+                <p><span class="letter-highlight">N</span>oble – Your actions are guided by a golden heart full of goodness.</p>
+                <p><span class="letter-highlight">N</span>urturing – You help things grow—with love, patience, and giggles.</p>
+                <p><span class="letter-highlight">N</span>aturally beautiful – You glow from the inside out, like sunshine wrapped in skin.</p>
+                <p><span class="letter-highlight">N</span>on-judgmental – With you, everyone feels safe to be their real, silly, magical self.</p>
+                <button class="next-btn" onclick="scrollToSection('letter-a2')">Next Letter 🏰</button>
+            </div>
+        </div>
+        
+        <!-- Letter A -->
+        <div class="page scroll-section" id="letter-a2">
+            <div class="content">
+                <h1><span class="letter-highlight">A</span> is for...</h1>
+                <div class="emoji-feature">🌟💫🏰</div>
+                <p>Dear <span class="friend-name">CHETHANA💝</span>,</p>
+                <p><span class="letter-highlight">A</span>dorable – You're the kind of cute that makes hearts sigh with happiness.</p>
+                <p><span class="letter-highlight">A</span>ppreciative – You notice all the good in the world and say thank you with a sparkle in your eyes.</p>
+                <p><span class="letter-highlight">A</span>chiever – You reach for the stars and bring back sparkles for everyone.</p>
+                <p><span class="letter-highlight">A</span>wesome-minded – Your thoughts are filled with rainbows, kindness, and genius ideas!</p>
+                <button class="next-btn" onclick="scrollToSection('finale')">Final Message 🏰</button>
+            </div>
+        </div>
+        
+        <!-- Finale -->
+        <div class="page scroll-section" id="finale">
+            <div class="content">
+                <h1 style="font-size:4rem;">Happy Birthday <span class="friend-name">MY BABY</span>! 🎉</h1>
+                <div class="emoji-feature">🎇🎂🏰💖</div>
+                <p>My Dearest <span class="friend-name">CHETHANA💝</span>,</p>
+                <p>Like Edinburgh's timeless beauty, your spirit shines through every season.</p>
+                <p>May your birthday be as magical as Beltane fire on Calton Hill,</p>
+                <p>As joyful as the Fringe Festival in full swing,</p>
+                <p>And as wonderful as you make every ordinary day.</p>
+                <p>You deserve castles in the air and dreams come true,</p>
+                <p>Love as deep as the Firth of Forth,</p>
+                <p>And happiness that sparkles like sunshine on the Royal Mile.</p>
+                <p>Happy Birthday from the bottom of my heart!</p>
+                <div class="signature">With all my love, Your Secret Admirer 💘</div>
+                <button class="next-btn" onclick="scrollToSection('cover')">Start Again 🔄</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Music control with multiple fallback options
+        const music = document.getElementById('birthdayMusic');
+        const musicToggle = document.getElementById('musicToggle');
+        let musicPlaying = false;
+        
+        // Try different music sources until one works
+        const musicSources = [
+            "https://assets.mixkit.co/music/preview/mixkit-romantic-suggestion-1212.mp3",
+            "https://assets.mixkit.co/music/preview/mixkit-piano-melody-1170.mp3",
+            "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+        ];
+        
+        let currentMusicSource = 0;
+        music.src = musicSources[currentMusicSource];
+        
+        music.addEventListener('error', function() {
+            if (currentMusicSource < musicSources.length - 1) {
+                currentMusicSource++;
+                music.src = musicSources[currentMusicSource];
+                if (musicPlaying) music.play();
+            }
+        });
+        
+        musicToggle.addEventListener('click', function() {
+            if (musicPlaying) {
+                music.pause();
+                musicToggle.textContent = "🔇";
+            } else {
+                music.play().catch(e => {
+                    // Try next source if current fails
+                    if (currentMusicSource < musicSources.length - 1) {
+                        currentMusicSource++;
+                        music.src = musicSources[currentMusicSource];
+                        music.play();
+                    }
+                });
+                musicToggle.textContent = "🎵";
+            }
+            musicPlaying = !musicPlaying;
+        });
+
+        // Auto-play music when page loads (with user interaction)
+        document.addEventListener('click', function initMusic() {
+            if (!musicPlaying) {
+                music.play().catch(e => {
+                    console.log("Auto-play prevented - will play after user interaction");
+                });
+                musicPlaying = true;
+                musicToggle.textContent = "🎵";
+            }
+            document.removeEventListener('click', initMusic);
+        });
+
+        // Scroll to section function
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+            createSparkles();
+        }
+
+        // Create floating emojis dynamically
+        function createFloatingEmojis() {
+            const emojis = ['🏰', '🦄', '✨', '🐉', '🌹', '🔮', '🎂', '💖', '🌟', '🌸', '💕', '💫', '🌈'];
+            const container = document.body;
+            
+            for (let i = 0; i < 25; i++) {
+                const emoji = document.createElement('div');
+                emoji.className = 'floating-emoji';
+                emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+                emoji.style.left = Math.random() * 100 + 'vw';
+                emoji.style.top = Math.random() * 100 + 'vh';
+                emoji.style.animationDuration = (Math.random() * 25 + 15) + 's';
+                emoji.style.animationDelay = Math.random() * 15 + 's';
+                emoji.style.fontSize = (Math.random() * 3 + 2) + 'rem';
+                emoji.style.opacity = Math.random() * 0.5 + 0.5;
+                container.appendChild(emoji);
+            }
+        }
+
+        // Create sparkle effect
+        function createSparkles() {
+            for (let i = 0; i < 30; i++) {
+                const sparkle = document.createElement('div');
+                sparkle.className = 'sparkle';
+                sparkle.style.left = Math.random() * 100 + 'vw';
+                sparkle.style.top = Math.random() * 100 + 'vh';
+                sparkle.style.width = sparkle.style.height = (Math.random() * 10 + 5) + 'px';
+                sparkle.style.animationDuration = (Math.random() * 0.7 + 0.3) + 's';
+                sparkle.style.animationDelay = (Math.random() * 0.5) + 's';
+                sparkle.style.backgroundColor = `hsl(${Math.random() * 60 + 330}, 100%, ${Math.random() * 30 + 70}%)`;
+                document.body.appendChild(sparkle);
+                
+                // Remove sparkle after animation
+                setTimeout(() => {
+                    sparkle.remove();
+                }, 1000);
+            }
+        }
+
+        // Rotate background images
+        function rotateBackgrounds() {
+            const backgrounds = document.querySelectorAll('.edinburgh-bg');
+            let current = 0;
+            
+            // Set initial visible background
+            backgrounds[0].style.opacity = '0.3';
+            
+            setInterval(() => {
+                backgrounds.forEach(bg => bg.style.opacity = '0');
+                current = (current + 1) % backgrounds.length;
+                backgrounds[current].style.opacity = '0.3';
+            }, 6000);
+        }
+
+        // Initialize
+        window.onload = function() {
+            createFloatingEmojis();
+            rotateBackgrounds();
+            
+            // Add sparkles on mouse move
+            document.addEventListener('mousemove', function(e) {
+                if (Math.random() > 0.8) {
+                    const sparkle = document.createElement('div');
+                    sparkle.className = 'sparkle';
+                    sparkle.style.left = e.clientX + 'px';
+                    sparkle.style.top = e.clientY + 'px';
+                    sparkle.style.width = sparkle.style.height = (Math.random() * 10 + 5) + 'px';
+                    sparkle.style.backgroundColor = `hsl(${Math.random() * 60 + 330}, 100%, ${Math.random() * 30 + 70}%)`;
+                    document.body.appendChild(sparkle);
+                    
+                    // Remove sparkle after animation
+                    setTimeout(() => {
+                        sparkle.remove();
+                    }, 1000);
+                }
+            });
+            
+            // Add periodic random sparkles
+            setInterval(() => {
+                if (Math.random() > 0.7) {
+                    createSparkles();
+                }
+            }, 3000);
+        };
+    </script>
+</body>
+</html>
